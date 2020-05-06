@@ -1,0 +1,7 @@
+{
+  "name": "Ng-Ionic-Git-Repos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
