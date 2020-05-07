@@ -1,0 +1,16 @@
+<div>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title *ngIf="repo && repo.full_name">{{repo.full_name}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+    <ion-item>
+      <ion-avatar *ngIf="repo">
+        <img [src]="repo.owner.avatar_url" />
+        <ion-label>{{repo.owner.login}}</ion-label>
+      </ion-avatar>
+    </ion-item>
+  </ion-content>
+</div>
